@@ -1,0 +1,17 @@
+.Presentation {}
+
+.Video__title {
+    font-size: 30px;
+    color: #333;
+    padding-top: 10%;
+    border-bottom: 2px solid #e67e22;
+    text-align: center;
+}
+
+.Video__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Video
