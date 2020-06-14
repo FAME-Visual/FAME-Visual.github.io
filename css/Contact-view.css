@@ -1,0 +1,75 @@
+.header.header__Contact {
+    height: 400px;
+}
+
+.header__Contact .header__texture {
+    background: url(../img/Clap.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.contact__view-container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #e67e22
+}
+
+.contact__view {
+    padding-top: 3%;
+}
+
+.form__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form__block {
+    width: 200px;
+    margin: 0 40px;
+}
+
+.form__block1 {
+    width: 200px;
+    padding-left: 0px;
+    margin-left: 320px;
+}
+
+.form__block2 {
+    padding-left: 45px;
+    width: 600px;
+}
+
+.form__label {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid #e67e22;
+    outline: 0;
+    transition: all 0.2s ease-in-out;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: 'Nunito';
+    margin-bottom: 15px;
+}
+
+.form__input:focus {
+    border: 3px solid #e67e22;
+}
+
+.form__inner .btn {
+    margin-top: 20px;
+    cursor: pointer;
+}

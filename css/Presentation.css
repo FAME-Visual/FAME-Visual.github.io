@@ -1,0 +1,10 @@
+    .Video__title {
+        font-size: 30px;
+        color: #333;
+        border-bottom: 2px solid #e67e22;
+        text-align: center;
+    }
+    
+    .Video__item {
+        padding-left: 33%;
+    }
