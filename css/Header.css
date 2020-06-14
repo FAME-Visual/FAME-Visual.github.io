@@ -39,7 +39,10 @@
     color: #fff;
     font-size: 28px;
 }
-
+.header__navbar--menu-link:hover {
+    font-weight: bold;
+    color: #e67e22;
+}
 .header__navbar--menu-link {
     margin-left: 40px;
     color: #fff;
