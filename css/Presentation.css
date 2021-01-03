@@ -9,19 +9,22 @@
     
     .texte {
         grid-area: texte;
-        align-items: center;
+        align-self: center;
+        justify-self: center;
     }
     
     .video {
         grid-area: video;
-        align-items: center;
+        align-self: center;
+        justify-self: center;
     }
     
     .bas {
         grid-area: svg;
         transition: 1s;
         animation: bounce 0.5s alternate infinite ease;
-        align-items: center;
+        align-self: center;
+        justify-self: center;
     }
     
     @keyframes bounce {
