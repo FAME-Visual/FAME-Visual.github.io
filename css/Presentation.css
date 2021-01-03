@@ -1,12 +1,18 @@
     .Presentation {
         height: 50vh;
         background-color: #fafafa;
-        display: flex;
-        margin: 20px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "texte video" "svg svg";
+    }
+    
+    .texte {
+        grid-area: texte;
     }
     
     .bas {
+        grid-area: svg;
         transition: 1s;
         animation: bounce 0.5s alternate infinite ease;
     }
