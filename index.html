@@ -72,7 +72,13 @@
     </div>
 
     <div class="page2" id="page2">
-        <h1>Présentation de notre équipe</h1>
+        <div class="titre">
+            <h1>Présentation de notre équipe</h1>
+        </div>
+
+        <div class="video_presentation">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/Qa3ADwAeXek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         <div class="bas">
             <a href="#page3">
@@ -83,7 +89,9 @@
     </div>
 
     <div class="page3" id="page3">
-        <h1>Nos locaux</h1>
+        <div class="titre">
+            <h1>Nos locaux</h1>
+        </div>
         <div id="mapid"></div>
     </div>
 
@@ -93,20 +101,34 @@
 </body>
 
 <script>
-    var map = L.map('mapid').setView([47.790172, 7.350445], 17);
+    var map = L.map('mapid').setView([47.730428, 7.301058], 17);
 
     var polygon = L.polygon([
-        [47.790172, 7.350445]
+        [47.731538, 7.300609],
+        [47.731141, 7.302325],
+        [47.729005, 7.301553],
+        [47.729495, 7.299477]
     ]).addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([47.790172, 7.350445]).addTo(map)
-        .bindPopup('Nos locaux')
+    L.marker([47.729746, 7.301738]).addTo(map)
+        .bindPopup('SGM et MMI<br> Bâtiment E')
+        .openPopup();
+
+    L.marker([47.729863, 7.301078]).addTo(map)
+        .bindPopup('GMP<br> Bâtiment C')
+        .openPopup();
+
+    L.marker([47.730712, 7.301593]).addTo(map)
+        .bindPopup('GEII<br> Bâtiment B et A')
+        .openPopup();
+
+    L.marker([47.730523, 7.300542]).addTo(map)
+        .bindPopup('GEA<br> Bâtiment H et F')
         .openPopup();
 </script>
-
 
 </html>

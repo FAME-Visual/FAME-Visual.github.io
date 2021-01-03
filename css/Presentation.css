@@ -1,10 +1,12 @@
     .Presentation {
-        height: 50vh;
+        height: 42vh;
         background-color: #fafafa;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 1fr 50px;
         grid-template-areas: "texte video" "svg svg";
+        align-items: center;
+        justify-items: center;
     }
     
     .texte {
@@ -15,7 +17,6 @@
     .video {
         margin-left: 100px;
         grid-area: video;
-        justify-items: center;
     }
     
     .bas {
@@ -23,7 +24,6 @@
         transition: 1s;
         animation: bounce 0.5s alternate infinite ease;
         align-items: center;
-        justify-items: center;
     }
     
     @keyframes bounce {
@@ -40,18 +40,39 @@
     }
     
     .page2 {
-        display: flex;
-        justify-content: center;
         height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 0, 8fr 100px;
+        grid-template-areas: "titre" "videopresentation" "svg";
+        justify-items: center;
+        height: 100vh;
+    }
+    
+    .titre {
+        grid-area: titre;
+    }
+    
+    .video_presentation {
+        grid-area: videopresentation;
     }
     
     .page3 {
-        display: flex;
-        justify-content: center;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "titre" "carte";
+        justify-items: center;
         height: 100vh;
     }
     
+    .titre {
+        grid-area: titre;
+    }
+    
     #mapid {
+        grid-area: carte;
         height: 500px;
     }
     
