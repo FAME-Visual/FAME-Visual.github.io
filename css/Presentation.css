@@ -51,6 +51,10 @@
         height: 100vh;
     }
     
+    #mapid {
+        height: 500px;
+    }
+    
     .Video__title {
         font-size: 30px;
         color: #333;
