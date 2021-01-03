@@ -13,10 +13,11 @@
     }
     
     .video {
+        display: flex;
         margin-left: 100px;
         grid-area: video;
-        align-items: center;
-        justify-items: center;
+        align-content: center;
+        justify-content: center;
     }
     
     .bas {
