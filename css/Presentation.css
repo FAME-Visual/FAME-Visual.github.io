@@ -9,8 +9,7 @@
     
     .texte {
         grid-area: texte;
-        align-items: center;
-        justify-items: center;
+        text-align: center;
     }
     
     .video {
