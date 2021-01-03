@@ -4,17 +4,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "texte video" "svg svg";
+        grid-template-areas: "texte video" "svg";
+        justify-items: center;
     }
     
     .texte {
         grid-area: texte;
+        justify-items: center;
     }
     
     .bas {
         grid-area: svg;
         transition: 1s;
         animation: bounce 0.5s alternate infinite ease;
+        justify-items: center;
     }
     
     @keyframes bounce {
