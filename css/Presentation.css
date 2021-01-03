@@ -5,12 +5,12 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "texte video" "svg svg";
-        justify-items: center;
+        align-items: center;
     }
     
     .texte {
         grid-area: texte;
-        justify-items: center;
+        align-items: center;
     }
     
     .video {
@@ -21,7 +21,7 @@
         grid-area: svg;
         transition: 1s;
         animation: bounce 0.5s alternate infinite ease;
-        justify-items: center;
+        align-items: center;
     }
     
     @keyframes bounce {
