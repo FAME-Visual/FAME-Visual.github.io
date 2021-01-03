@@ -4,13 +4,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "texte video" "svg";
+        grid-template-areas: "texte video" "svg svg";
         justify-items: center;
     }
     
     .texte {
         grid-area: texte;
         justify-items: center;
+    }
+    
+    .video {
+        grid-area: video;
     }
     
     .bas {
