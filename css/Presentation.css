@@ -1,6 +1,30 @@
     .Presentation {
         height: 50vh;
         background-color: #fafafa;
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bas {
+        transition: 1s;
+        animation: bounce 0.5s alternate infinite ease;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(10px);
+        }
+    }
+    
+    .page2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .Video__title {
