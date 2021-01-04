@@ -17,6 +17,7 @@
     .video {
         margin-left: 100px;
         grid-area: video;
+        align-self: center;
     }
     
     .bas {
