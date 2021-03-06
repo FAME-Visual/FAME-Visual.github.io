@@ -27,6 +27,10 @@
     margin: 0 auto;
 }
 
+.projet{
+    height : 100vh;
+}
+
 .galerie_video {
     display: grid;
     grid-template-columns: 1fr 1fr;
