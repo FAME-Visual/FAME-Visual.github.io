@@ -6,8 +6,8 @@
 }
 
 .header__texture {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 0;
     left: 0;
@@ -27,8 +27,8 @@
 }
 
 .header__navbar {
-    width: 50%;
-    height: 50px;
+    width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
